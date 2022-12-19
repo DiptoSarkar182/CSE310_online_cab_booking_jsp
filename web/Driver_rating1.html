@@ -1,0 +1,146 @@
+
+
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Passenger rate his/her driver</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+ label:before {
+  content: '☆';
+  color: white;
+  font-size: 2em;
+}
+label.on:before {
+  content: '★';
+  color: white;
+  /* uncomment for iOS */
+/*   font-size: 2.4em;
+  top: -0.1em;
+  left: -0.1em; */
+}
+input:checked + label:before {
+  content: '★'; 
+  color: white;
+  /* uncomment for iOS */
+/*   font-size: 2.4em;
+  top: -0.1em;
+  left: -0.1em; */
+}
+label {  
+  display: inline-block;  
+  cursor: pointer;  
+  position: relative;  
+  padding-left: 25px;  
+  margin-right: 15px;  
+  font-size: 20px; 
+}
+label:before {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  position: absolute;
+  left: 0;
+  border-radius: 10px;
+}
+input[type=radio] {
+  display: none;
+  -webkit-appearance: none;
+}
+
+/* Non-essential */
+body {
+  margin: 2em;
+  background-color: #448AC1;
+  text-align: center;
+  /* remove gray highlight on tap in iOS */
+  -webkit-tap-highlight-color:transparent;
+}
+.question {
+  margin-bottom: 8em;
+}
+#q1 {
+  margin-top: 6em;
+}
+p {
+  color: white;
+  font-family: Bitter, sans-serif;
+  font-size: 2em;
+}
+#submit {
+  font-size: 24px;
+  font-family: Bitter, sans-serif;
+  color: #448AC1;
+  background-color: white;
+  width: 80px;
+  height: 80px;
+  border: none;
+  border-radius: 40px;
+}
+
+
+ 
+
+
+            </style>
+    </head>
+    
+        
+    <body>
+        
+        
+        <center>Rate Your Driver</center>
+        
+        <center ><form action="Driver_rating_serv" method="post">
+                
+                    
+                    
+<!--                    <div class="rate">
+    <input type="radio" id="star5" name="rate" value="5" />
+    <label for="star5" title="text">5 stars</label>
+    <input type="radio" id="star4" name="rate" value="4" />
+    <label for="star4" title="text">4 stars</label>
+    <input type="radio" id="star3" name="rate" value="3" />
+    <label for="star3" title="text">3 stars</label>
+    <input type="radio" id="star2" name="rate" value="2" />
+    <label for="star2" title="text">2 stars</label>
+    <input type="radio" id="star1" name="rate" value="1" />
+    <label for="star1" title="text">1 star</label>
+  </div>-->
+<div class="rate">
+    <input type="radio" id="star5" name="rate" value="5" />
+    <label for="star5" title="text">5 stars</label>
+    <input type="radio" id="star4" name="rate" value="4" />
+    <label for="star4" title="text">4 stars</label>
+    <input type="radio" id="star3" name="rate" value="3" />
+    <label for="star3" title="text">3 stars</label>
+    <input type="radio" id="star2" name="rate" value="2" />
+    <label for="star2" title="text">2 stars</label>
+    <input type="radio" id="star1" name="rate" value="1" />
+    <label for="star1" title="text">1 star</label>
+  </div>
+
+  
+
+  <input type="submit" value="ok" id="submit">
+                      
+                      
+                      
+                
+                
+                </form>
+            
+            
+            
+            
+        </center> 
+    
+    </body>
+    
+</html>
